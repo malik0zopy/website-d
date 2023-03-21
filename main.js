@@ -17,8 +17,14 @@ function getData() {
     response.json().then((data) => {
       let d = document.createElement("div");
       d.className = "data-name";
+      let sensorVal = document.createElement("span")
+      sensorVal.createTextNode(`<b>time:</b>${data}`)
+      sensortVal.className ="sensor-val"
+      let timeVal = document.createElement("span")
+      timeVal.createTextNode(`<b>time:</b>${date}`);
+      timeVal.className ="time-val"
       let dataTEXT = document.createTextNode(
-        `sensor value:${data},time:${date}`
+        `sensor value:${sensorVal},time:${timeVal}`
       );
       d.appendChild(dataTEXT);
       blynkData.appendChild(d);
