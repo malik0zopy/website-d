@@ -19,7 +19,7 @@ function getData() {
       d.className = "data-name";
       let sensorVal = document.createElement("span")
       sensorVal.createTextNode(`<b>time:</b>${data}`)
-      sensortVal.className ="sensor-val"
+      sensorVal.className ="sensor-val"
       let timeVal = document.createElement("span")
       timeVal.createTextNode(`<b>time:</b>${date}`);
       timeVal.className ="time-val"
