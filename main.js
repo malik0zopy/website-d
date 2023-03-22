@@ -13,9 +13,11 @@ function getData() {
       let timeVal = document.createElement("span");
       timeVal.innerHTML = `<b>time:</b>${date}`;
       timeVal.className = "time-val";
+
       d.appendChild(sensorVal);
       d.appendChild(timeVal);
       blynkData.appendChild(d);
+      document.appendChild(blynkData);
     });
   });
 }
