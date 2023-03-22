@@ -1,4 +1,13 @@
 //main varibales
+let blynkData = document.querySelector(".show-data");
+let i = 0;
+let date = new Date();
+function timeout() {
+  setTimeout(function () {
+    getData();
+    timeout();
+  }, 1000);
+}
 
 function getData() {
   fetch(
