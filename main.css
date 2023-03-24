@@ -1,3 +1,18 @@
+.body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*container*/
+.data-container{
+    width: 75%;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #9d9d9d;
+}
 .time-val {
-    color:blueviolet;
+    color:rgb(7, 103, 45);
 }
