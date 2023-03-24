@@ -1,3 +1,6 @@
+//indexedDB
+
+
 //main varibales
 let blynkData = document.querySelector(".show-data");
 let i = 0;
@@ -9,6 +12,8 @@ function timeout() {
     
   }, 1000);
 }
+
+
 
 function getData() {
   fetch(
@@ -23,13 +28,18 @@ function getData() {
       sensorVal.innerHTML = `<b>sensor value:</b><span style="color: red">${data}</span>\t`;
       sensorVal.className = "sensor-val";
       //time info
+      let date = new Date();
       let timeVal = document.createElement("span");
-      timeVal.innerHTML = `<b>time:</b>${date}`;
+      timeVal.innerHTML = `<b>time:</b><span>${date}</span`;
       timeVal.className = "time-val";
       //appending to main container
       d.append(sensorVal, timeVal);
-      blynkData.appendChild(d);
+      blynkData.prepend(d);
+
+
+      
     });
   });
 }
+
 timeout();
